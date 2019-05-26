@@ -21,27 +21,38 @@ You can compile the program using the provided Makefile
   #make
 
 You can test the local compiled version of the program using. 
+
   #make test1
+
     ...
+
   #make test6
 
 'cat' the makefile to see what the various tests do.
 
 You can install an updated version of the program
+
   #make install
   
 Command line switches for u2c (and print)
+
   -l   Will print line numbers from 1..99999 
+
   -u   Don't convert the printed file to DOS format, default is to convert
+
   -i   Indent the printed line 8 spaces
+
   -p   Print the file name and page number on the top of each page
 
 You can mix the command line variables as needed.  
 
 The script "print" calls compiled program "u2d" and will pipe the printable output directly to a printer, lpd by default.
+
   print myfile.txt -l -i -p
   
 The "u2c" program outputs the formatted text to stdout. You can redirect this to a file or output device using pipes.
+
   u2c myfile.txt -l -i -p | newfile.txt
+
   u2c myfile.txt -l -i -p | lpr
   
