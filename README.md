@@ -24,6 +24,7 @@ You can test the local compiled version of the program using.
   #make test1
     ...
   #make test6
+
 'cat' the makefile to see what the various tests do.
 
 You can install an updated version of the program
@@ -34,6 +35,7 @@ Command line switches for u2c (and print)
   -u   Don't convert the printed file to DOS format, default is to convert
   -i   Indent the printed line 8 spaces
   -p   Print the file name and page number on the top of each page
+
 You can mix the command line variables as needed.  
 
 The script "print" calls compiled program "u2d" and will pipe the printable output directly to a printer, lpd by default.
